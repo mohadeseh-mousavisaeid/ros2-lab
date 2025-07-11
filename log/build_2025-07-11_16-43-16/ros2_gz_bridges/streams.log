@@ -1,0 +1,19 @@
+[1.792s] Invoking command in '/home/projectlab3_ss25/test_project/src/ros2_gz_bridges': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/projectlab3_ss25/test_project/build/ros2_gz_bridges/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/projectlab3_ss25/test_project/install/ros2_gz_bridges/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros2_gz_bridges build --build-base /home/projectlab3_ss25/test_project/build/ros2_gz_bridges/build install --record /home/projectlab3_ss25/test_project/build/ros2_gz_bridges/install.log --single-version-externally-managed install_data
+[2.156s] running egg_info
+[2.187s] writing ../../build/ros2_gz_bridges/ros2_gz_bridges.egg-info/PKG-INFO
+[2.187s] writing dependency_links to ../../build/ros2_gz_bridges/ros2_gz_bridges.egg-info/dependency_links.txt
+[2.188s] writing requirements to ../../build/ros2_gz_bridges/ros2_gz_bridges.egg-info/requires.txt
+[2.188s] writing top-level names to ../../build/ros2_gz_bridges/ros2_gz_bridges.egg-info/top_level.txt
+[2.251s] reading manifest file '../../build/ros2_gz_bridges/ros2_gz_bridges.egg-info/SOURCES.txt'
+[2.252s] writing manifest file '../../build/ros2_gz_bridges/ros2_gz_bridges.egg-info/SOURCES.txt'
+[2.252s] running build
+[2.253s] running build_py
+[2.253s] running install
+[2.263s] running install_lib
+[2.290s] running install_data
+[2.292s] running install_egg_info
+[2.323s] removing '/home/projectlab3_ss25/test_project/install/ros2_gz_bridges/lib/python3.12/site-packages/ros2_gz_bridges-0.0.0-py3.12.egg-info' (and everything under it)
+[2.324s] Copying ../../build/ros2_gz_bridges/ros2_gz_bridges.egg-info to /home/projectlab3_ss25/test_project/install/ros2_gz_bridges/lib/python3.12/site-packages/ros2_gz_bridges-0.0.0-py3.12.egg-info
+[2.325s] running install_scripts
+[2.534s] writing list of installed files to '/home/projectlab3_ss25/test_project/build/ros2_gz_bridges/install.log'
+[2.566s] Invoked command in '/home/projectlab3_ss25/test_project/src/ros2_gz_bridges' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/projectlab3_ss25/test_project/build/ros2_gz_bridges/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/projectlab3_ss25/test_project/install/ros2_gz_bridges/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros2_gz_bridges build --build-base /home/projectlab3_ss25/test_project/build/ros2_gz_bridges/build install --record /home/projectlab3_ss25/test_project/build/ros2_gz_bridges/install.log --single-version-externally-managed install_data

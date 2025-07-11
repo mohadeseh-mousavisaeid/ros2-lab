@@ -1,0 +1,18 @@
+running egg_info
+writing ../../build/simple_path_planner/simple_path_planner.egg-info/PKG-INFO
+writing dependency_links to ../../build/simple_path_planner/simple_path_planner.egg-info/dependency_links.txt
+writing entry points to ../../build/simple_path_planner/simple_path_planner.egg-info/entry_points.txt
+writing requirements to ../../build/simple_path_planner/simple_path_planner.egg-info/requires.txt
+writing top-level names to ../../build/simple_path_planner/simple_path_planner.egg-info/top_level.txt
+reading manifest file '../../build/simple_path_planner/simple_path_planner.egg-info/SOURCES.txt'
+writing manifest file '../../build/simple_path_planner/simple_path_planner.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_egg_info
+removing '/home/projectlab3_ss25/test_project/install/simple_path_planner/lib/python3.12/site-packages/simple_path_planner-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/simple_path_planner/simple_path_planner.egg-info to /home/projectlab3_ss25/test_project/install/simple_path_planner/lib/python3.12/site-packages/simple_path_planner-0.0.0-py3.12.egg-info
+running install_scripts
+Installing simple_path_planner script to /home/projectlab3_ss25/test_project/install/simple_path_planner/lib/simple_path_planner
+writing list of installed files to '/home/projectlab3_ss25/test_project/build/simple_path_planner/install.log'

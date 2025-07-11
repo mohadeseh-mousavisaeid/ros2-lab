@@ -1,4 +1,4 @@
 import sys
 if sys.prefix == '/usr':
     sys.real_prefix = sys.prefix
-    sys.prefix = sys.exec_prefix = '/home/projectlab3_ss25/our_ws/install/ros2_gz_bridges'
+    sys.prefix = sys.exec_prefix = '/home/projectlab3_ss25/test_project/install/ros2_gz_bridges'
