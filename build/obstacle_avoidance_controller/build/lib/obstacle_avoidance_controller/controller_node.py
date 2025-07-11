@@ -27,7 +27,7 @@ class ObstacleAvoidController(Node):
     def scan_callback(self, msg):
         # Focus on a narrow forward-facing laser scan window
         mid = len(msg.ranges) // 2
-        window = 20
+        window = 60
         front_ranges = msg.ranges[mid - window : mid + window]
         self.min_distance = min(front_ranges)
 
