@@ -1,0 +1,23 @@
+[2.331s] Invoking command in '/home/projectlab3_ss25/our_ws/src/obstacle_avoidance_nav2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/projectlab3_ss25/our_ws/build/obstacle_avoidance_nav2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/projectlab3_ss25/our_ws/install/obstacle_avoidance_nav2/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/obstacle_avoidance_nav2 build --build-base /home/projectlab3_ss25/our_ws/build/obstacle_avoidance_nav2/build install --record /home/projectlab3_ss25/our_ws/build/obstacle_avoidance_nav2/install.log --single-version-externally-managed
+[2.889s] running egg_info
+[2.926s] writing ../../build/obstacle_avoidance_nav2/obstacle_avoidance_nav2.egg-info/PKG-INFO
+[2.926s] writing dependency_links to ../../build/obstacle_avoidance_nav2/obstacle_avoidance_nav2.egg-info/dependency_links.txt
+[2.927s] writing entry points to ../../build/obstacle_avoidance_nav2/obstacle_avoidance_nav2.egg-info/entry_points.txt
+[2.928s] writing requirements to ../../build/obstacle_avoidance_nav2/obstacle_avoidance_nav2.egg-info/requires.txt
+[2.930s] writing top-level names to ../../build/obstacle_avoidance_nav2/obstacle_avoidance_nav2.egg-info/top_level.txt
+[3.015s] reading manifest file '../../build/obstacle_avoidance_nav2/obstacle_avoidance_nav2.egg-info/SOURCES.txt'
+[3.017s] writing manifest file '../../build/obstacle_avoidance_nav2/obstacle_avoidance_nav2.egg-info/SOURCES.txt'
+[3.017s] running build
+[3.018s] running build_py
+[3.020s] copying obstacle_avoidance_nav2/nav2_node.py -> /home/projectlab3_ss25/our_ws/build/obstacle_avoidance_nav2/build/lib/obstacle_avoidance_nav2
+[3.020s] running install
+[3.030s] running install_lib
+[3.082s] copying /home/projectlab3_ss25/our_ws/build/obstacle_avoidance_nav2/build/lib/obstacle_avoidance_nav2/nav2_node.py -> /home/projectlab3_ss25/our_ws/install/obstacle_avoidance_nav2/lib/python3.12/site-packages/obstacle_avoidance_nav2
+[3.082s] byte-compiling /home/projectlab3_ss25/our_ws/install/obstacle_avoidance_nav2/lib/python3.12/site-packages/obstacle_avoidance_nav2/nav2_node.py to nav2_node.cpython-312.pyc
+[3.084s] running install_egg_info
+[3.125s] removing '/home/projectlab3_ss25/our_ws/install/obstacle_avoidance_nav2/lib/python3.12/site-packages/obstacle_avoidance_nav2-0.0.1-py3.12.egg-info' (and everything under it)
+[3.127s] Copying ../../build/obstacle_avoidance_nav2/obstacle_avoidance_nav2.egg-info to /home/projectlab3_ss25/our_ws/install/obstacle_avoidance_nav2/lib/python3.12/site-packages/obstacle_avoidance_nav2-0.0.1-py3.12.egg-info
+[3.130s] running install_scripts
+[3.459s] Installing nav2_node script to /home/projectlab3_ss25/our_ws/install/obstacle_avoidance_nav2/lib/obstacle_avoidance_nav2
+[3.460s] writing list of installed files to '/home/projectlab3_ss25/our_ws/build/obstacle_avoidance_nav2/install.log'
+[3.522s] Invoked command in '/home/projectlab3_ss25/our_ws/src/obstacle_avoidance_nav2' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/projectlab3_ss25/our_ws/build/obstacle_avoidance_nav2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/projectlab3_ss25/our_ws/install/obstacle_avoidance_nav2/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/obstacle_avoidance_nav2 build --build-base /home/projectlab3_ss25/our_ws/build/obstacle_avoidance_nav2/build install --record /home/projectlab3_ss25/our_ws/build/obstacle_avoidance_nav2/install.log --single-version-externally-managed

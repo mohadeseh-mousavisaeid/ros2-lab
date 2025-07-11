@@ -26,9 +26,15 @@ class ObstacleAvoidController(Node):
 
     def scan_callback(self, msg):
         # Focus on a narrow forward-facing laser scan window
-        mid = len(msg.ranges) // 2
-        window = 60
-        front_ranges = msg.ranges[mid - window : mid + window]
+        mid = 0 # len(msg.ranges) // 2 180
+        self.get_logger().info(f"mid: {mid}")
+        self.get_logger().info(f"total: {len(msg.ranges)}")
+
+        window = 5
+        front_ranges_1 = msg.ranges[0 : 5]
+        front_ranges_2 = msg.ranges[355 : 360]
+        front_ranges = front_ranges_1 + front_ranges_2
+        self.get_logger().info(f"total: {front_ranges}")
         self.min_distance = min(front_ranges)
 
     def odom_callback(self, msg):
@@ -65,9 +71,13 @@ class ObstacleAvoidController(Node):
                 msg.twist.angular.z = 0.5
             elif self.min_distance < 1.0:
                 self.get_logger().info("Obstacle nearby: slowing down")
-                msg.twist.linear.x = 0.3
+                msg.twist.linear.x = 0.1
+                msg.twist.angular.z = 0.0
             else:
-                msg.twist.linear.x = 0.6  # Cruise speed
+                self.get_logger().info("Moving normally ")
+                msg.twist.linear.x = 0.5 # Cruise speed
+                msg.twist.angular.z = 0.0
+                self.get_logger().info(f'x_velocity: {msg.twist.linear.x:.2f} m')
 
         self.cmd_pub.publish(msg)
 

@@ -1,0 +1,18 @@
+[3.415s] Invoking command in '/home/projectlab3_ss25/our_ws/src/ros2_gz_bridges': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/projectlab3_ss25/our_ws/build/ros2_gz_bridges/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/projectlab3_ss25/our_ws/install/ros2_gz_bridges/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ros2_gz_bridges build --build-base /home/projectlab3_ss25/our_ws/build/ros2_gz_bridges/build install --record /home/projectlab3_ss25/our_ws/build/ros2_gz_bridges/install.log --single-version-externally-managed install_data
+[4.579s] running egg_info
+[4.628s] writing ../../build/ros2_gz_bridges/ros2_gz_bridges.egg-info/PKG-INFO
+[4.628s] writing dependency_links to ../../build/ros2_gz_bridges/ros2_gz_bridges.egg-info/dependency_links.txt
+[4.629s] writing requirements to ../../build/ros2_gz_bridges/ros2_gz_bridges.egg-info/requires.txt
+[4.631s] writing top-level names to ../../build/ros2_gz_bridges/ros2_gz_bridges.egg-info/top_level.txt
+[4.744s] reading manifest file '../../build/ros2_gz_bridges/ros2_gz_bridges.egg-info/SOURCES.txt'
+[4.744s] writing manifest file '../../build/ros2_gz_bridges/ros2_gz_bridges.egg-info/SOURCES.txt'
+[4.745s] running build
+[4.745s] running build_py
+[4.745s] running install
+[4.758s] running install_lib
+[4.820s] running install_data
+[4.820s] running install_egg_info
+[4.904s] removing '/home/projectlab3_ss25/our_ws/install/ros2_gz_bridges/lib/python3.12/site-packages/ros2_gz_bridges-0.0.0-py3.12.egg-info' (and everything under it)
+[4.905s] Copying ../../build/ros2_gz_bridges/ros2_gz_bridges.egg-info to /home/projectlab3_ss25/our_ws/install/ros2_gz_bridges/lib/python3.12/site-packages/ros2_gz_bridges-0.0.0-py3.12.egg-info
+[4.907s] running install_scripts
+[5.257s] writing list of installed files to '/home/projectlab3_ss25/our_ws/build/ros2_gz_bridges/install.log'

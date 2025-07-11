@@ -1,0 +1,2 @@
+[console_scripts]
+simple_path_planner = simple_path_planner.simple_path_planner:main

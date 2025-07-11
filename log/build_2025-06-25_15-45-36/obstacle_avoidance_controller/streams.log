@@ -1,0 +1,22 @@
+[2.260s] Invoking command in '/home/projectlab3_ss25/our_ws/src/obstacle_avoidance_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/projectlab3_ss25/our_ws/build/obstacle_avoidance_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/projectlab3_ss25/our_ws/install/obstacle_avoidance_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/obstacle_avoidance_controller build --build-base /home/projectlab3_ss25/our_ws/build/obstacle_avoidance_controller/build install --record /home/projectlab3_ss25/our_ws/build/obstacle_avoidance_controller/install.log --single-version-externally-managed install_data
+[3.022s] running egg_info
+[3.074s] writing ../../build/obstacle_avoidance_controller/obstacle_avoidance_controller.egg-info/PKG-INFO
+[3.075s] writing dependency_links to ../../build/obstacle_avoidance_controller/obstacle_avoidance_controller.egg-info/dependency_links.txt
+[3.076s] writing entry points to ../../build/obstacle_avoidance_controller/obstacle_avoidance_controller.egg-info/entry_points.txt
+[3.077s] writing requirements to ../../build/obstacle_avoidance_controller/obstacle_avoidance_controller.egg-info/requires.txt
+[3.079s] writing top-level names to ../../build/obstacle_avoidance_controller/obstacle_avoidance_controller.egg-info/top_level.txt
+[3.187s] reading manifest file '../../build/obstacle_avoidance_controller/obstacle_avoidance_controller.egg-info/SOURCES.txt'
+[3.188s] writing manifest file '../../build/obstacle_avoidance_controller/obstacle_avoidance_controller.egg-info/SOURCES.txt'
+[3.189s] running build
+[3.189s] running build_py
+[3.189s] running install
+[3.202s] running install_lib
+[3.266s] running install_data
+[3.267s] running install_egg_info
+[3.316s] removing '/home/projectlab3_ss25/our_ws/install/obstacle_avoidance_controller/lib/python3.12/site-packages/obstacle_avoidance_controller-0.0.0-py3.12.egg-info' (and everything under it)
+[3.319s] Copying ../../build/obstacle_avoidance_controller/obstacle_avoidance_controller.egg-info to /home/projectlab3_ss25/our_ws/install/obstacle_avoidance_controller/lib/python3.12/site-packages/obstacle_avoidance_controller-0.0.0-py3.12.egg-info
+[3.328s] running install_scripts
+[3.639s] Installing obstacle_avoidance script to /home/projectlab3_ss25/our_ws/install/obstacle_avoidance_controller/lib/obstacle_avoidance_controller
+[3.641s] Installing obstacle_avoidance_2 script to /home/projectlab3_ss25/our_ws/install/obstacle_avoidance_controller/lib/obstacle_avoidance_controller
+[3.643s] writing list of installed files to '/home/projectlab3_ss25/our_ws/build/obstacle_avoidance_controller/install.log'
+[3.719s] Invoked command in '/home/projectlab3_ss25/our_ws/src/obstacle_avoidance_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/projectlab3_ss25/our_ws/build/obstacle_avoidance_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/projectlab3_ss25/our_ws/install/obstacle_avoidance_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/obstacle_avoidance_controller build --build-base /home/projectlab3_ss25/our_ws/build/obstacle_avoidance_controller/build install --record /home/projectlab3_ss25/our_ws/build/obstacle_avoidance_controller/install.log --single-version-externally-managed install_data

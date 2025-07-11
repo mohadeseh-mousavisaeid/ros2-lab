@@ -1,0 +1,32 @@
+running egg_info
+creating ../../build/ros2_gz_bridges/ros2_gz_bridges.egg-info
+writing ../../build/ros2_gz_bridges/ros2_gz_bridges.egg-info/PKG-INFO
+writing dependency_links to ../../build/ros2_gz_bridges/ros2_gz_bridges.egg-info/dependency_links.txt
+writing requirements to ../../build/ros2_gz_bridges/ros2_gz_bridges.egg-info/requires.txt
+writing top-level names to ../../build/ros2_gz_bridges/ros2_gz_bridges.egg-info/top_level.txt
+writing manifest file '../../build/ros2_gz_bridges/ros2_gz_bridges.egg-info/SOURCES.txt'
+reading manifest file '../../build/ros2_gz_bridges/ros2_gz_bridges.egg-info/SOURCES.txt'
+writing manifest file '../../build/ros2_gz_bridges/ros2_gz_bridges.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/projectlab3_ss25/our_ws/build/ros2_gz_bridges/build
+creating /home/projectlab3_ss25/our_ws/build/ros2_gz_bridges/build/lib
+creating /home/projectlab3_ss25/our_ws/build/ros2_gz_bridges/build/lib/ros2_gz_bridges
+copying ros2_gz_bridges/__init__.py -> /home/projectlab3_ss25/our_ws/build/ros2_gz_bridges/build/lib/ros2_gz_bridges
+running install
+running install_lib
+creating /home/projectlab3_ss25/our_ws/install/ros2_gz_bridges/lib/python3.12/site-packages/ros2_gz_bridges
+copying /home/projectlab3_ss25/our_ws/build/ros2_gz_bridges/build/lib/ros2_gz_bridges/__init__.py -> /home/projectlab3_ss25/our_ws/install/ros2_gz_bridges/lib/python3.12/site-packages/ros2_gz_bridges
+byte-compiling /home/projectlab3_ss25/our_ws/install/ros2_gz_bridges/lib/python3.12/site-packages/ros2_gz_bridges/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/projectlab3_ss25/our_ws/install/ros2_gz_bridges/share/ament_index
+creating /home/projectlab3_ss25/our_ws/install/ros2_gz_bridges/share/ament_index/resource_index
+creating /home/projectlab3_ss25/our_ws/install/ros2_gz_bridges/share/ament_index/resource_index/packages
+copying resource/ros2_gz_bridges -> /home/projectlab3_ss25/our_ws/install/ros2_gz_bridges/share/ament_index/resource_index/packages
+copying package.xml -> /home/projectlab3_ss25/our_ws/install/ros2_gz_bridges/share/ros2_gz_bridges
+creating /home/projectlab3_ss25/our_ws/install/ros2_gz_bridges/share/ros2_gz_bridges/launch
+copying launch/bridge_matched_topics.launch.py -> /home/projectlab3_ss25/our_ws/install/ros2_gz_bridges/share/ros2_gz_bridges/launch
+running install_egg_info
+Copying ../../build/ros2_gz_bridges/ros2_gz_bridges.egg-info to /home/projectlab3_ss25/our_ws/install/ros2_gz_bridges/lib/python3.12/site-packages/ros2_gz_bridges-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/projectlab3_ss25/our_ws/build/ros2_gz_bridges/install.log'

@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/obstacle_avoidance_controller/obstacle_avoidance_controller.egg-info/PKG-INFO
+writing dependency_links to ../../build/obstacle_avoidance_controller/obstacle_avoidance_controller.egg-info/dependency_links.txt
+writing entry points to ../../build/obstacle_avoidance_controller/obstacle_avoidance_controller.egg-info/entry_points.txt
+writing requirements to ../../build/obstacle_avoidance_controller/obstacle_avoidance_controller.egg-info/requires.txt
+writing top-level names to ../../build/obstacle_avoidance_controller/obstacle_avoidance_controller.egg-info/top_level.txt
+reading manifest file '../../build/obstacle_avoidance_controller/obstacle_avoidance_controller.egg-info/SOURCES.txt'
+writing manifest file '../../build/obstacle_avoidance_controller/obstacle_avoidance_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+copying obstacle_avoidance_controller/nav2_node.py -> /home/projectlab3_ss25/our_ws/build/obstacle_avoidance_controller/build/lib/obstacle_avoidance_controller
+running install
+running install_lib
+copying /home/projectlab3_ss25/our_ws/build/obstacle_avoidance_controller/build/lib/obstacle_avoidance_controller/nav2_node.py -> /home/projectlab3_ss25/our_ws/install/obstacle_avoidance_controller/lib/python3.12/site-packages/obstacle_avoidance_controller
+byte-compiling /home/projectlab3_ss25/our_ws/install/obstacle_avoidance_controller/lib/python3.12/site-packages/obstacle_avoidance_controller/nav2_node.py to nav2_node.cpython-312.pyc
+running install_data
+running install_egg_info
+removing '/home/projectlab3_ss25/our_ws/install/obstacle_avoidance_controller/lib/python3.12/site-packages/obstacle_avoidance_controller-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/obstacle_avoidance_controller/obstacle_avoidance_controller.egg-info to /home/projectlab3_ss25/our_ws/install/obstacle_avoidance_controller/lib/python3.12/site-packages/obstacle_avoidance_controller-0.0.0-py3.12.egg-info
+running install_scripts
+Installing obstacle_avoidance script to /home/projectlab3_ss25/our_ws/install/obstacle_avoidance_controller/lib/obstacle_avoidance_controller
+writing list of installed files to '/home/projectlab3_ss25/our_ws/build/obstacle_avoidance_controller/install.log'

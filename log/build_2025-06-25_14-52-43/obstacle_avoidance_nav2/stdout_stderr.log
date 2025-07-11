@@ -1,0 +1,8 @@
+[33mCMake Warning:
+  Ignoring extra path from command line:
+
+   "/home/projectlab3_ss25/our_ws/src/obstacle_avoidance_nav2"
+
+[0m
+[0mCMake Error: The source directory "/home/projectlab3_ss25/our_ws/src/obstacle_avoidance_nav2" does not appear to contain CMakeLists.txt.
+Specify --help for usage, or press the help button on the CMake GUI.[0m

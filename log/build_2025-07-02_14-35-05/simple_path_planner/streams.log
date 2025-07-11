@@ -1,0 +1,11 @@
+[3.596s] Invoking command in '/home/projectlab3_ss25/our_ws/src/path_planner': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/projectlab3_ss25/our_ws/build/simple_path_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/projectlab3_ss25/our_ws/install/simple_path_planner/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/simple_path_planner build --build-base /home/projectlab3_ss25/our_ws/build/simple_path_planner/build install --record /home/projectlab3_ss25/our_ws/build/simple_path_planner/install.log --single-version-externally-managed
+[4.226s] running egg_info
+[4.226s] creating ../../build/simple_path_planner/simple_path_planner.egg-info
+[4.310s] writing ../../build/simple_path_planner/simple_path_planner.egg-info/PKG-INFO
+[4.310s] writing dependency_links to ../../build/simple_path_planner/simple_path_planner.egg-info/dependency_links.txt
+[4.310s] writing entry points to ../../build/simple_path_planner/simple_path_planner.egg-info/entry_points.txt
+[4.310s] writing requirements to ../../build/simple_path_planner/simple_path_planner.egg-info/requires.txt
+[4.310s] writing top-level names to ../../build/simple_path_planner/simple_path_planner.egg-info/top_level.txt
+[4.313s] writing manifest file '../../build/simple_path_planner/simple_path_planner.egg-info/SOURCES.txt'
+[4.428s] error: package directory 'simple_path_planner' does not exist
+[4.508s] Invoked command in '/home/projectlab3_ss25/our_ws/src/path_planner' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/projectlab3_ss25/our_ws/build/simple_path_planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/projectlab3_ss25/our_ws/install/simple_path_planner/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/simple_path_planner build --build-base /home/projectlab3_ss25/our_ws/build/simple_path_planner/build install --record /home/projectlab3_ss25/our_ws/build/simple_path_planner/install.log --single-version-externally-managed

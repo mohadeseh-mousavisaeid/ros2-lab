@@ -1,0 +1,29 @@
+running develop
+Removing /home/projectlab3_ss25/our_ws/install/obstacle_avoidance_nav2/lib/python3.12/site-packages/obstacle-avoidance-nav2.egg-link (link to .)
+running egg_info
+writing ../../build/obstacle_avoidance_nav2/obstacle_avoidance_nav2.egg-info/PKG-INFO
+writing dependency_links to ../../build/obstacle_avoidance_nav2/obstacle_avoidance_nav2.egg-info/dependency_links.txt
+writing entry points to ../../build/obstacle_avoidance_nav2/obstacle_avoidance_nav2.egg-info/entry_points.txt
+writing requirements to ../../build/obstacle_avoidance_nav2/obstacle_avoidance_nav2.egg-info/requires.txt
+writing top-level names to ../../build/obstacle_avoidance_nav2/obstacle_avoidance_nav2.egg-info/top_level.txt
+reading manifest file '../../build/obstacle_avoidance_nav2/obstacle_avoidance_nav2.egg-info/SOURCES.txt'
+writing manifest file '../../build/obstacle_avoidance_nav2/obstacle_avoidance_nav2.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/projectlab3_ss25/our_ws/build/obstacle_avoidance_nav2/build
+creating /home/projectlab3_ss25/our_ws/build/obstacle_avoidance_nav2/build/lib
+creating /home/projectlab3_ss25/our_ws/build/obstacle_avoidance_nav2/build/lib/obstacle_avoidance_nav2
+copying obstacle_avoidance_nav2/__init__.py -> /home/projectlab3_ss25/our_ws/build/obstacle_avoidance_nav2/build/lib/obstacle_avoidance_nav2
+copying obstacle_avoidance_nav2/nav2_node.py -> /home/projectlab3_ss25/our_ws/build/obstacle_avoidance_nav2/build/lib/obstacle_avoidance_nav2
+running install
+running install_lib
+creating /home/projectlab3_ss25/our_ws/install/obstacle_avoidance_nav2/lib/python3.12/site-packages/obstacle_avoidance_nav2
+copying /home/projectlab3_ss25/our_ws/build/obstacle_avoidance_nav2/build/lib/obstacle_avoidance_nav2/__init__.py -> /home/projectlab3_ss25/our_ws/install/obstacle_avoidance_nav2/lib/python3.12/site-packages/obstacle_avoidance_nav2
+copying /home/projectlab3_ss25/our_ws/build/obstacle_avoidance_nav2/build/lib/obstacle_avoidance_nav2/nav2_node.py -> /home/projectlab3_ss25/our_ws/install/obstacle_avoidance_nav2/lib/python3.12/site-packages/obstacle_avoidance_nav2
+byte-compiling /home/projectlab3_ss25/our_ws/install/obstacle_avoidance_nav2/lib/python3.12/site-packages/obstacle_avoidance_nav2/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/projectlab3_ss25/our_ws/install/obstacle_avoidance_nav2/lib/python3.12/site-packages/obstacle_avoidance_nav2/nav2_node.py to nav2_node.cpython-312.pyc
+running install_egg_info
+Copying ../../build/obstacle_avoidance_nav2/obstacle_avoidance_nav2.egg-info to /home/projectlab3_ss25/our_ws/install/obstacle_avoidance_nav2/lib/python3.12/site-packages/obstacle_avoidance_nav2-0.0.1-py3.12.egg-info
+running install_scripts
+Installing nav2_node script to /home/projectlab3_ss25/our_ws/install/obstacle_avoidance_nav2/lib/obstacle_avoidance_nav2
+writing list of installed files to '/home/projectlab3_ss25/our_ws/build/obstacle_avoidance_nav2/install.log'
