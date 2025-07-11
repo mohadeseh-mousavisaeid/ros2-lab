@@ -1,8 +1,0 @@
-running egg_info
-creating ../../build/simple_path_planner/simple_path_planner.egg-info
-writing ../../build/simple_path_planner/simple_path_planner.egg-info/PKG-INFO
-writing dependency_links to ../../build/simple_path_planner/simple_path_planner.egg-info/dependency_links.txt
-writing entry points to ../../build/simple_path_planner/simple_path_planner.egg-info/entry_points.txt
-writing requirements to ../../build/simple_path_planner/simple_path_planner.egg-info/requires.txt
-writing top-level names to ../../build/simple_path_planner/simple_path_planner.egg-info/top_level.txt
-writing manifest file '../../build/simple_path_planner/simple_path_planner.egg-info/SOURCES.txt'

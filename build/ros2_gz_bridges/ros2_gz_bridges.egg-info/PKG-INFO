@@ -1,7 +1,0 @@
-Metadata-Version: 2.1
-Name: ros2-gz-bridges
-Version: 0.0.0
-Summary: ROS 2 <-> Gazebo bridge launchers
-Maintainer: Your Name
-Maintainer-email: your@email.com
-License: Apache License 2.0

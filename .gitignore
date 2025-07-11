@@ -1,0 +1,34 @@
+# ROS 2 colcon build system
+build/
+install/
+log/
+
+# Python cache and build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VSCode settings
+.vscode/
+
+# ROS 2 launch logs and artifacts
+*.log
+*.db
+
+# System files
+.DS_Store
+Thumbs.db
+
+# ROS bag files (optional, if not needed in version control)
+*.bag
+*.bag.active
+*.mcap
+
+# Map files (optional — only ignore if you don't want to commit them)
+# *.pgm
+# *.yaml
+
+# Python virtual environments
+.env/
+venv/
