@@ -93,8 +93,8 @@ class SimplePathPlanner(Node):
             self.get_logger().info('Using simulation time (/clock)')
 
         # — declare other parameters —
-        self.declare_parameter('goal_x', 3.2085)
-        self.declare_parameter('goal_y', -0.24024)
+        self.declare_parameter('goal_x', 0.0)
+        self.declare_parameter('goal_y', 0.0)
         self.declare_parameter('goal_yaw', 0.0)
         self.declare_parameter('verbose', True)
 
