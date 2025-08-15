@@ -17,7 +17,12 @@ pip install torch torchvision torchaudio pandas PyYAML mcap mcap-ros2 rosbags
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 
 # Launch Navigation2 with map
-ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=our_ws/my_map.yaml
+# ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=project-ws/my_map.yaml
+
+ros2 launch turtlebot3_navigation2 navigation2.launch.py \
+  use_sim_time:=True \
+  map:=$HOME/Documents/Projects/ROS2LAB/project-ws/my_map.yaml
+
 
 # (Optional) Launch Cartographer for mapping
 ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
