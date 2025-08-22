@@ -4,7 +4,7 @@ from torch.utils.data import DataLoader, TensorDataset
 import pandas as pd
 
 # --- Load CSV ---
-df = pd.read_csv('/home/projectlab3_ss25/our_ws/dataset/all_data_merged_2025-08-13_14-17-41.csv')
+df = pd.read_csv('/home/projectlab3_ss25/our_ws/dataset/new_da_2025-08-20_16-28-01.csv')
 
 # --- Fill missing values ---
 df = df.fillna(0.0)
@@ -55,7 +55,7 @@ for epoch in range(100):
     print(f"Epoch {epoch}, Loss {total_loss:.4f}")
 
 # --- Save the Model ---
-torch.save(model.state_dict(), '13_08__nn_controller.pt')
+torch.save(model.state_dict(), '20_08__nn_controller_2.pt')
 print("Model trained and saved as 13_08_nn_controller.pt")
 
 

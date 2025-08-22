@@ -17,6 +17,7 @@ setup(
         'console_scripts': [
             # ros2 run simple_path_planner simple_path_planner
             'simple_path_planner = simple_path_planner.simple_path_planner:main',
+            'send_goal_pose = simple_path_planner.send_goal_pose:main',
         ],
     },
 )

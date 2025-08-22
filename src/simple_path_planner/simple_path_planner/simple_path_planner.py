@@ -131,6 +131,9 @@ class SimplePathPlanner(Node):
             10
         )
 
+        # --- NEW: publish a startup initial pose immediately ---
+        self.publish_initial_pose()
+
         # NavigateToPose action client
         self._nav_client = ActionClient(self, NavigateToPose, 'navigate_to_pose')
         self.get_logger().info('Waiting for NavigateToPose action server...')
@@ -143,6 +146,25 @@ class SimplePathPlanner(Node):
         # timer to send goal once we have a pose
         self._sent = False
         self.create_timer(1.0, self.try_send)
+
+    # --- NEW helper method ---
+    def publish_initial_pose(self):
+        init_pose = PoseWithCovarianceStamped()
+        init_pose.header.frame_id = "map"
+        init_pose.header.stamp = self.get_clock().now().to_msg()
+        init_pose.pose.pose.position.x = -1.17
+        init_pose.pose.pose.position.y = 0.06
+        init_pose.pose.pose.orientation.z = 0.1088
+        init_pose.pose.pose.orientation.w = 0.9940
+
+        # covariance values
+        init_pose.pose.covariance = [0.0] * 36
+        init_pose.pose.covariance[0] = 0.25
+        init_pose.pose.covariance[7] = 0.25
+        init_pose.pose.covariance[35] = 0.0685
+
+        self.init_pub.publish(init_pose)
+        self.get_logger().info("✅ Published startup /initialpose")
 
     def plan_cb(self, msg: Path):
         self.waypoints.clear()
@@ -205,7 +227,7 @@ class SimplePathPlanner(Node):
         if self.current_pose is None:
             return
 
-        # publish initial pose
+        # publish initial pose (runtime, from current pose)
         self.current_pose.header.stamp = self.get_clock().now().to_msg()
         self.init_pub.publish(self.current_pose)
         self.get_logger().info('Published initial pose to /initialpose')

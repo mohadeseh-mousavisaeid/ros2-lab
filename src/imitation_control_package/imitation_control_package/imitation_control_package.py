@@ -31,7 +31,7 @@ class NNControllerNode(Node):
         # Load model
         self.model = ControllerNN()
         try:
-            self.model.load_state_dict(torch.load('13_08__nn_controller.pt'))
+            self.model.load_state_dict(torch.load('20_08__nn_controller_2.pt'))
             self.model.eval()
             print("✅ Loaded model successfully.")
         except Exception as e:

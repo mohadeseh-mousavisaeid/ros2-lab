@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<sdf version="1.8">
+  <world name="annular_race_world">
+    <!-- physics/plugins unchanged -->
+    <physics type="ode">
+      <real_time_update_rate>1000</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <ode>
+        <solver><type>quick</type><iters>150</iters><precon_iters>0</precon_iters><sor>1.4</sor><use_dynamic_moi_rescaling>1</use_dynamic_moi_rescaling></solver>
+        <constraints><cfm>1e-5</cfm><erp>0.2</erp><contact_max_correcting_vel>2000</contact_max_correcting_vel><contact_surface_layer>0.01</contact_surface_layer></constraints>
+      </ode>
+    </physics>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors"><render_engine>ogre2</render_engine></plugin>
+    <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"/>
+
+    <!-- environment -->
+    <include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Ground Plane</uri></include>
+    <include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Sun</uri></include>
+
+    <!-- annulus visual (no collision) -->
+    <!-- OUTER R=7, INNER R=5 -->
+    <model name="annulus_visual" static="true">
+      <link name="ring">
+        <visual name="outer"><pose>0 0 0.001 0 0 0</pose><geometry><cylinder><radius>7.0</radius><length>0.02</length></cylinder></geometry><material><diffuse>0.35 0.35 0.35 1</diffuse></material></visual>
+        <visual name="inner"><pose>0 0 0.002 0 0 0</pose><geometry><cylinder><radius>4.0</radius><length>0.02</length></cylinder></geometry><material><diffuse>0.82 0.82 0.82 1</diffuse></material></visual>
+        <collision name="noop"><pose>0 0 -1 0 0 0</pose><geometry><box><size>0.001 0.001 0.001</size></box></geometry></collision>
+      </link>
+    </model>
+
+    <!-- ================== PHYSICAL WALLS ================== -->
+    <!-- Track: inner R=5 m, outer R=7 m; lane width=2 m -->
+    <!-- Height H=0.60 m, radial thickness T=0.30 m -->
+    <!-- 16 segments (every 22.5°). Box size is X=chord (long, tangent), Y=T (radial), Z=H -->
+    <!-- Tangential orientation = yaw = theta + pi/2 -->
+    <!-- Overlap: OUTER chord ~2.731 m => use X=2.95; INNER chord ~1.951 m => use X=2.15 -->
+
+    <!-- OUTER WALL @ R=7 -->
+    <model name="outer_wall" static="true">
+      <link name="o00"><pose>7.000 0.000 0.30 0 0 1.570796</pose><collision name="c"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></visual></link>
+      <link name="o01"><pose>6.467 2.679 0.30 0 0 1.963495</pose><collision name="c"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></visual></link>
+      <link name="o02"><pose>4.950 4.950 0.30 0 0 2.356194</pose><collision name="c"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></visual></link>
+      <link name="o03"><pose>2.679 6.467 0.30 0 0 2.748894</pose><collision name="c"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></visual></link>
+      <link name="o04"><pose>0.000 7.000 0.30 0 0 3.141593</pose><collision name="c"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></visual></link>
+      <link name="o05"><pose>-2.679 6.467 0.30 0 0 3.534292</pose><collision name="c"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></visual></link>
+      <link name="o06"><pose>-4.950 4.950 0.30 0 0 3.926991</pose><collision name="c"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></visual></link>
+      <link name="o07"><pose>-6.467 2.679 0.30 0 0 4.319691</pose><collision name="c"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></visual></link>
+      <link name="o08"><pose>-7.000 0.000 0.30 0 0 4.712389</pose><collision name="c"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></visual></link>
+      <link name="o09"><pose>-6.467 -2.679 0.30 0 0 5.105088</pose><collision name="c"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></visual></link>
+      <link name="o10"><pose>-4.950 -4.950 0.30 0 0 5.497787</pose><collision name="c"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></visual></link>
+      <link name="o11"><pose>-2.679 -6.467 0.30 0 0 5.890486</pose><collision name="c"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></visual></link>
+      <link name="o12"><pose>-0.000 -7.000 0.30 0 0 6.283185</pose><collision name="c"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></visual></link>
+      <link name="o13"><pose>2.679 -6.467 0.30 0 0 6.675884</pose><collision name="c"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></visual></link>
+      <link name="o14"><pose>4.950 -4.950 0.30 0 0 7.068583</pose><collision name="c"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></visual></link>
+      <link name="o15"><pose>6.467 -2.679 0.30 0 0 7.461283</pose><collision name="c"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>2.95 0.30 0.60</size></box></geometry></visual></link>
+    </model>
+
+    <!-- INNER WALL @ R=5 -->
+    <!-- INNER WALL: chord(22.5°) at R=4.0 -> ~1.564 m; use 1.76 m for overlap -->
+    <model name="inner_wall" static="true">
+      <link name="i00"><pose>4.000 0.000 0.30 0 0 1.570796</pose><collision name="c"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></visual></link>
+      <link name="i01"><pose>3.695 1.531 0.30 0 0 1.963495</pose><collision name="c"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></visual></link>
+      <link name="i02"><pose>2.828 2.828 0.30 0 0 2.356194</pose><collision name="c"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></visual></link>
+      <link name="i03"><pose>1.531 3.695 0.30 0 0 2.748894</pose><collision name="c"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></visual></link>
+      <link name="i04"><pose>0.000 4.000 0.30 0 0 3.141593</pose><collision name="c"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></visual></link>
+      <link name="i05"><pose>-1.531 3.695 0.30 0 0 3.534292</pose><collision name="c"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></visual></link>
+      <link name="i06"><pose>-2.828 2.828 0.30 0 0 3.926991</pose><collision name="c"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></visual></link>
+      <link name="i07"><pose>-3.695 1.531 0.30 0 0 4.319691</pose><collision name="c"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></visual></link>
+      <link name="i08"><pose>-4.000 0.000 0.30 0 0 4.712389</pose><collision name="c"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></visual></link>
+      <link name="i09"><pose>-3.695 -1.531 0.30 0 0 5.105088</pose><collision name="c"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></visual></link>
+      <link name="i10"><pose>-2.828 -2.828 0.30 0 0 5.497787</pose><collision name="c"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></visual></link>
+      <link name="i11"><pose>-1.531 -3.695 0.30 0 0 5.890486</pose><collision name="c"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></visual></link>
+      <link name="i12"><pose>-0.000 -4.000 0.30 0 0 6.283185</pose><collision name="c"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></visual></link>
+      <link name="i13"><pose>1.531 -3.695 0.30 0 0 6.675884</pose><collision name="c"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></visual></link>
+      <link name="i14"><pose>2.828 -2.828 0.30 0 0 7.068583</pose><collision name="c"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></visual></link>
+      <link name="i15"><pose>3.695 -1.531 0.30 0 0 7.461283</pose><collision name="c"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></collision><visual name="v"><geometry><box><size>1.76 0.30 0.60</size></box></geometry></visual></link>
+    </model>
+
+    <!-- FINISH GATE: still at 90°, mid-radius = 5.5 m -->
+    <model name="finish_gate" static="true">
+      <link name="gate">
+        <pose>0.0 5.5 0.35 0 0 1.5708</pose>
+        <!-- X spans 3.0 m lane + overlap -->
+        <collision name="c">
+          <geometry>
+            <box><size>3.40 0.30 0.70</size></box>
+          </geometry>
+        </collision>
+        <visual name="v">
+          <geometry>
+            <box><size>3.40 0.30 0.70</size></box>
+          </geometry>
+          <material><diffuse>0.9 0.9 0.9 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+
+
+    <gui><camera name="overview"><pose>0 -18 12 0.7 0 0</pose></camera></gui>
+  </world>
+</sdf>
